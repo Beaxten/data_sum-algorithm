@@ -61,6 +61,7 @@ public class data_general_wise {
               
         try{
             return formatter(dateString ,choice , formatter);
+            
         }
         catch(Exception e){
            return formatter(dateString ,choice , formatter2);
@@ -71,6 +72,7 @@ public class data_general_wise {
              LocalDate date = LocalDate.parse(dateString, formatter);
                 if(choice == true){
                     String month = date.getMonth().getDisplayName(TextStyle.FULL, Locale.ENGLISH);
+
                     return month;      
                 }
                 else{
